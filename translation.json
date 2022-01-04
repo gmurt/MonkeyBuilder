@@ -1,0 +1,636 @@
+[
+	{
+		"en": "Loading",
+		"fr": "Chargement",
+		"de": "Wird geladen",
+		"pt": "Carregando",
+		"it": "Caricamento in corso",
+		"es": "Cargando",
+		"zh-cn": "载入中"
+	},
+	{
+		"en": "Loading... Please wait...",
+		"fr": "Chargement, veuillez patienter...",
+		"de": "Lade, bitte warten...",
+		"pt": "Carregando, por favor espere...",
+		"it": "Attendere il caricamento prego...",
+		"es": "Cargando por favor espere...",
+		"zh-cn": "加载请稍候..."
+	},
+	{
+		"en": "Unregistered",
+		"fr": "Non enregistré",
+		"de": "Nicht registriert",
+		"pt": "Não registrado",
+		"it": "Non registrato",
+		"es": "No registrado",
+		"zh-cn": "未注册"
+	},
+	{
+		"en": "MonkeyBuilder v0.1",
+		"fr": "MonkeyBuilder v0.1",
+		"de": "MonkeyBuilder v0.1",
+		"pt": "MonkeyBuilder v0.1",
+		"it": "MonkeyBuilder v0.1",
+		"es": "MonkeyBuilder v0.1",
+		"zh-cn": "MonkeyBuilder v0.1"
+	},
+	{
+		"en": "PROJECT",
+		"fr": "PROJET",
+		"de": "PROJEKT",
+		"pt": "PROJETO",
+		"it": "PROGETTO",
+		"es": "PROYECTO",
+		"zh-cn": "项目"
+	},
+	{
+		"en": "Add",
+		"fr": "Ajouter",
+		"de": "Hinzufügen",
+		"pt": "Adicionar",
+		"it": "Inserisci",
+		"es": "Añadir",
+		"zh-cn": "加"
+	},
+	{
+		"en": "Remove",
+		"fr": "Retirer",
+		"de": "Entfernen",
+		"pt": "Retirar",
+		"it": "Rimuovi",
+		"es": "Eliminar",
+		"zh-cn": "去掉"
+	},
+	{
+		"en": "Edit",
+		"fr": "Éditer",
+		"de": "Bearbeiten",
+		"pt": "Editar",
+		"it": "Modifica",
+		"es": "Editar",
+		"zh-cn": "编辑"
+	},
+	{
+		"en": "BUILD",
+		"fr": "CONSTRUIRE",
+		"de": "ERZEUGEN",
+		"pt": "CONSTRUIR",
+		"it": "BUILD",
+		"es": "CONSTRUIR",
+		"zh-cn": "建立"
+	},
+	{
+		"en": "Build",
+		"fr": "Construire",
+		"de": "Erzeugen",
+		"pt": "Construir",
+		"it": "Build",
+		"es": "Construir",
+		"zh-cn": "建立"
+	},
+	{
+		"en": "Builds",
+		"fr": "Construit",
+		"de": "Builds",
+		"pt": "Constrói",
+		"it": "Builds",
+		"es": "Construye",
+		"zh-cn": "建物"
+	},
+	{
+		"en": "Build && Deploy",
+		"fr": "Construire et déployer",
+		"de": "Build && Deploy",
+		"pt": "Construir e implementar",
+		"it": "Build && Deploy",
+		"es": "Build && Deploy",
+		"zh-cn": "构建和部署"
+	},
+	{
+		"en": "HELP",
+		"fr": "AIDEZ-MOI",
+		"de": "HILFE",
+		"pt": "SOCORRO",
+		"it": "AIUTO",
+		"es": "AYUDA",
+		"zh-cn": "帮帮我"
+	},
+	{
+		"en": "About",
+		"fr": "À propos de",
+		"de": "Über",
+		"pt": "Sobre",
+		"it": "Informazioni",
+		"es": "Acerca de",
+		"zh-cn": "关于"
+	},
+	{
+		"en": "ADMIN",
+		"fr": "ADMIN",
+		"de": "ADMINISTRATOR",
+		"pt": "ADMIN",
+		"it": "ADMIN",
+		"es": "ADMINISTRACIÓN",
+		"zh-cn": "管理员"
+	},
+	{
+		"en": "Settings",
+		"fr": "Réglages",
+		"de": "Einstellungen",
+		"pt": "Definições",
+		"it": "Impostazioni",
+		"es": "Configuraciones",
+		"zh-cn": "设定值"
+	},
+	{
+		"en": "License",
+		"fr": "Licence",
+		"de": "Lizenz",
+		"pt": "Licença",
+		"it": "Licenza",
+		"es": "Licencia",
+		"zh-cn": "执照"
+	},
+	{
+		"en": "Language",
+		"fr": "Langue",
+		"de": "Sprache",
+		"pt": "Língua",
+		"it": "Lingua",
+		"es": "Idioma",
+		"zh-cn": "语言"
+	},
+	{
+		"en": "Deploy",
+		"fr": "Déployer",
+		"de": "Bereitstellen",
+		"pt": "Implantar",
+		"it": "Deploy",
+		"es": "Desplegar",
+		"zh-cn": "部署"
+	},
+	{
+		"en": "Update",
+		"fr": "Mise à jour",
+		"de": "Aktualisieren",
+		"pt": "Atualizar",
+		"it": "Aggiorna",
+		"es": "Actualizar",
+		"zh-cn": "更新资料"
+	},
+	{
+		"en": "Build for iOS && Android",
+		"fr": "Construire pour iOS et Android",
+		"de": "Build für iOS && Android",
+		"pt": "Construir para iOS e Android",
+		"it": "Build per iOS && Android",
+		"es": "Compilación para iOS y Android",
+		"zh-cn": "为iOS && Android构建"
+	},
+	{
+		"en": "Build for Android",
+		"fr": "Construire pour Android",
+		"de": "Build für Android",
+		"pt": "Build para Android",
+		"it": "Build per Android",
+		"es": "Construir para Android",
+		"zh-cn": "为Android构建"
+	},
+	{
+		"en": "Build for iOS",
+		"fr": "Construire pour iOS",
+		"de": "Build für iOS",
+		"pt": "Build para iOS",
+		"it": "Build per iOS",
+		"es": "Construir para iOS",
+		"zh-cn": "为iOS构建"
+	},
+	{
+		"en": "Build && Deploy for iOS",
+		"fr": "Build && Deploy pour iOS",
+		"de": "Build && Deploy für iOS",
+		"pt": "Compilar e implementar para iOS",
+		"it": "Build && Deploy per iOS",
+		"es": "Build && Deploy para iOS",
+		"zh-cn": "为iOS构建和部署"
+	},
+	{
+		"en": "Build && Deploy for Android",
+		"fr": "Build && Deploy pour Android",
+		"de": "Build && Deploy für Android",
+		"pt": "Compilar e implementar para Android",
+		"it": "Build && Deploy per Android",
+		"es": "Build && Deploy para Android",
+		"zh-cn": "为Android构建和部署"
+	},
+	{
+		"en": "Build && Deploy for iOS && Android",
+		"fr": "Build && Deploy pour iOS && Android",
+		"de": "Build && Deploy für iOS && Android",
+		"pt": "Compilar e implementar para iOS e Android",
+		"it": "Build && Deploy per iOS && Android",
+		"es": "Build && Deploy para iOS && Android",
+		"zh-cn": "为iOS && Android构建和部署"
+	},
+	{
+		"en": "Open in Explorer",
+		"fr": "Ouvrir dans l'explorateur",
+		"de": "Im Explorer öffnen",
+		"pt": "Abrir no Explorer",
+		"it": "Apri in Explorer",
+		"es": "Abrir en el explorador",
+		"zh-cn": "在资源管理器中打开"
+	},
+	{
+		"en": "actEnglish",
+		"fr": "actanglais",
+		"de": "actEnglish",
+		"pt": "actEnglish",
+		"it": "actEnglish",
+		"es": "actEnglish",
+		"zh-cn": "英语"
+	},
+	{
+		"en": "Build Select Android",
+		"fr": "Build Select Android",
+		"de": "Build Select Android",
+		"pt": "Build Select Android",
+		"it": "Build Android selezionato",
+		"es": "Build Select Android",
+		"zh-cn": "构建选择Android"
+	},
+	{
+		"en": "Build Selected iOS",
+		"fr": "Créer l'iOS sélectionné",
+		"de": "Ausgewählte iOS Version erzeugen",
+		"pt": "Criar iOS selecionado",
+		"it": "Build iOS selezionato",
+		"es": "Construir iOS seleccionado",
+		"zh-cn": "构建选定的iOS"
+	},
+	{
+		"en": "Build Selected Android && iOS",
+		"fr": "Créez des appareils Android et iOS sélectionnés",
+		"de": "Ausgewählte Version für Android && iOS erstellen",
+		"pt": "Criar Android e&I selecionados",
+		"it": "Build Android && iOS selezionati",
+		"es": "Construir Android && iOS seleccionados",
+		"zh-cn": "构建选定的Android && iOS"
+	},
+	{
+		"en": "Copy",
+		"fr": "Copie",
+		"de": "Kopieren",
+		"pt": "cópia de",
+		"it": "Copia",
+		"es": "Copiar",
+		"zh-cn": "复制"
+	},
+	{
+		"en": "-",
+		"fr": "-",
+		"de": "- -",
+		"pt": "-",
+		"it": "-",
+		"es": "-",
+		"zh-cn": "--"
+	},
+	{
+		"en": "English",
+		"fr": "Anglais",
+		"de": "Englisch",
+		"pt": "Inglês",
+		"it": "inglese",
+		"es": "Inglés",
+		"zh-cn": "英语"
+	},
+	{
+		"en": "French",
+		"fr": "français",
+		"de": "Französisch",
+		"pt": "francês",
+		"it": "francese",
+		"es": "francés",
+		"zh-cn": "法文"
+	},
+	{
+		"en": "German",
+		"fr": "allemand",
+		"de": "Deutsch",
+		"pt": "alemão",
+		"it": "Tedesco",
+		"es": "alemán",
+		"zh-cn": "德语"
+	},
+	{
+		"en": "Italian",
+		"fr": "italien",
+		"de": "Italienisch",
+		"pt": "italiano",
+		"it": "Italiano",
+		"es": "italiano",
+		"zh-cn": "义大利文"
+	},
+	{
+		"en": "Portugese",
+		"fr": "Portugais",
+		"de": "Portugiesisch",
+		"pt": "Português",
+		"it": "Portoghese",
+		"es": "Portugués",
+		"zh-cn": "葡萄牙语"
+	},
+	{
+		"en": "Spanish",
+		"fr": "Espagnol",
+		"de": "Spanisch",
+		"pt": "espanhol",
+		"it": "Spagnolo",
+		"es": "Español",
+		"zh-cn": "西班牙文"
+	},
+	{
+		"en": "Project Manager",
+		"fr": "Gestionnaire de projet",
+		"de": "Projektmanager",
+		"pt": "Gestor de projeto",
+		"it": "Project Manager",
+		"es": "Gerente de proyecto",
+		"zh-cn": "专案经理"
+	},
+	{
+		"en": "Output",
+		"fr": "Production",
+		"de": "Ausgabe",
+		"pt": "Resultado",
+		"it": "Output",
+		"es": "Salida",
+		"zh-cn": "输出量"
+	},
+	{
+		"en": "Click to update",
+		"fr": "Cliquez pour mettre à jour",
+		"de": "Klicken zum aktualisieren",
+		"pt": "Clique para atualizar",
+		"it": "Fai clic per aggiornare",
+		"es": "Haga clic para actualizar",
+		"zh-cn": "点击更新"
+	},
+	{
+		"en": "A new version is available",
+		"fr": "Une nouvelle version est disponible",
+		"de": "Eine neue Version ist verfügbar",
+		"pt": "Uma nova versão está disponível",
+		"it": "È disponibile una nuova versione",
+		"es": "Una nueva version esta disponible",
+		"zh-cn": "有新版本可用"
+	},
+	{
+		"en": "Would you like to download and install the update now?",
+		"fr": "Souhaitez-vous télécharger et installer la mise à jour maintenant?",
+		"de": "Möchten Sie das Update jetzt herunterladen und installieren?",
+		"pt": "Deseja baixar e instalar a atualização agora?",
+		"it": "Desideri scaricare e installare l'aggiornamento ora?",
+		"es": "¿Desea descargar e instalar la actualización ahora?",
+		"zh-cn": "您要立即下载并安装更新吗？"
+	},
+	{
+		"en": "Cancel",
+		"fr": "Annuler",
+		"de": "Abbrechen",
+		"pt": "Cancelar",
+		"it": "Annulla",
+		"es": "Cancelar",
+		"zh-cn": "取消"
+	},
+	{
+		"en": "&Ok",
+		"fr": "&D'accord",
+		"de": "&OK",
+		"pt": "&Está bem",
+		"it": "&Ok",
+		"es": "&Okay",
+		"zh-cn": "＆好"
+	},
+	{
+		"en": "Registered to:",
+		"fr": "Enregistré à:",
+		"de": "Registriert für:",
+		"pt": "Registrado para:",
+		"it": "Registrato a:",
+		"es": "Registrado a:",
+		"zh-cn": "登记在："
+	},
+	{
+		"en": "Unregistered Version",
+		"fr": "Version non enregistrée",
+		"de": "Unregistrierte Version",
+		"pt": "Versão não registrada",
+		"it": "Versione non registrata",
+		"es": "Versión no registrada",
+		"zh-cn": "未注册版本"
+	},
+	{
+		"en": "Paste your license key below to update your license",
+		"fr": "Collez votre clé de licence ci-dessous pour mettre à jour votre licence",
+		"de": "Fügen Sie unten Ihren Lizenzschlüssel ein, um Ihre Lizenz zu aktualisieren",
+		"pt": "Cole sua chave de licença abaixo para atualizar sua licença",
+		"it": "Incolla la chiave di licenza in basso per aggiornare la licenza",
+		"es": "Pegue su clave de licencia a continuación para actualizar su licencia",
+		"zh-cn": "在下面粘贴您的许可证密钥以更新您的许可证"
+	},
+	{
+		"en": "License:",
+		"fr": "Licence:",
+		"de": "Lizenz:",
+		"pt": "Licença:",
+		"it": "Licenza:",
+		"es": "Licencia:",
+		"zh-cn": "执照："
+	},
+	{
+		"en": "Free",
+		"fr": "Gratuit",
+		"de": "Kostenlos",
+		"pt": "Livre",
+		"it": "Gratuito",
+		"es": "Gratis",
+		"zh-cn": "自由"
+	},
+	{
+		"en": "Register",
+		"fr": "S'inscrire",
+		"de": "Registrieren",
+		"pt": "Registro",
+		"it": "Registrati",
+		"es": "Registrarse",
+		"zh-cn": "寄存器"
+	},
+	{
+		"en": "MonkeyBuilder limited to working with [NUM] project(s) with this license",
+		"fr": "MonkeyBuilder limité à travailler avec [NUM] projet (s) avec cette licence",
+		"de": "MonkeyBuilder kann mit dieser Lizenz nur [NUM] - Projekte bearbeiten",
+		"pt": "MonkeyBuilder limitado a trabalhar com [NUM] projeto (s) com esta licença",
+		"it": "MonkeyBuilder si limita a lavorare con [NUM] progetti con questa licenza",
+		"es": "MonkeyBuilder se limita a trabajar con [NUM] proyectos con esta licencia",
+		"zh-cn": "MonkeyBuilder仅限使用此许可证处理[NUM]个项目"
+	},
+	{
+		"en": "Maximum Projects",
+		"fr": "Projets maximum",
+		"de": "Maximale Projektanzahl",
+		"pt": "Projetos máximos",
+		"it": "Progetti massimi",
+		"es": "Proyectos máximos",
+		"zh-cn": "最大项目"
+	},
+	{
+		"en": "Please upgrade your license to add more projects",
+		"fr": "Veuillez mettre à niveau votre licence pour ajouter plus de projets",
+		"de": "Bitte aktualisieren Sie Ihre Lizenz, um weitere Projekte hinzuzufügen",
+		"pt": "Atualize sua licença para adicionar mais projetos",
+		"it": "Aggiorna la tua licenza per aggiungere altri progetti",
+		"es": "Actualice su licencia para agregar más proyectos",
+		"zh-cn": "请升级您的许可证以添加更多项目"
+	},
+	{
+		"en": "Major",
+		"zh-cn": "重大的",
+		"fr": "Majeur",
+		"de": "Haupt",
+		"it": "Maggiore",
+		"pt": "Principal",
+		"es": "Mayor"
+	},
+	{
+		"en": "Minor",
+		"zh-cn": "次要",
+		"fr": "Mineur",
+		"de": "Geringer",
+		"it": "Minore",
+		"pt": "Menor",
+		"es": "Menor"
+	},
+	{
+		"en": "Project",
+		"zh-cn": "项目",
+		"fr": "Projet",
+		"de": "Projekt",
+		"it": "Progetto",
+		"pt": "Projeto",
+		"es": "Proyecto"
+	},
+	{
+		"en": "Compiler",
+		"zh-cn": "编译器",
+		"fr": "Compilateur",
+		"de": "Compiler",
+		"it": "Compiler",
+		"pt": "Compilador",
+		"es": "Compilador"
+	},
+	{
+		"en": "Title",
+		"zh-cn": "标题",
+		"fr": "Titre",
+		"de": "Titel",
+		"it": "Titolo",
+		"pt": "Título",
+		"es": "Título"
+	},
+	{
+		"en": "Version",
+		"zh-cn": "版",
+		"fr": "Version",
+		"de": "Ausführung",
+		"it": "Versione",
+		"pt": "Versão",
+		"es": "Versión"
+	},
+	{
+		"en": "Platform & SDK",
+		"zh-cn": "平台和SDK",
+		"fr": "Plateforme et SDK",
+		"de": "Plattform & SDK",
+		"it": "Piattaforma e SDK",
+		"pt": "Plataforma e SDK",
+		"es": "Plataforma y SDK"
+	},
+	{
+		"en": "Usage Descriptions",
+		"zh-cn": "使用说明",
+		"fr": "Descriptions d'utilisation",
+		"de": "Verwendungsbeschreibungen",
+		"it": "Descrizioni d'uso",
+		"pt": "Descrições de uso",
+		"es": "Descripciones de uso"
+	},
+	{
+		"en": "Entitlements",
+		"zh-cn": "权益",
+		"fr": "Droits",
+		"de": "Ansprüche",
+		"it": "I diritti",
+		"pt": "Direitos",
+		"es": "Derechos"
+	},
+	{
+		"en": "Icons",
+		"zh-cn": "图示",
+		"fr": "Icônes",
+		"de": "Symbole",
+		"it": "Icone",
+		"pt": "Ícones",
+		"es": "Íconos"
+	},
+	{
+		"en": "Splash Screens",
+		"zh-cn": "开机画面",
+		"fr": "Écrans de démarrage",
+		"de": "Begrüßungsbildschirme",
+		"it": "Schermi Splash",
+		"pt": "Telas Splash",
+		"es": "Pantallas de bienvenida"
+	},
+	{
+		"en": "Permissions",
+		"zh-cn": "权限",
+		"fr": "Autorisations",
+		"de": "Berechtigungen",
+		"it": "permessi",
+		"pt": "Permissões",
+		"es": "Permisos"
+	},
+	{
+		"en": "Deployment Files",
+		"zh-cn": "部署文件",
+		"fr": "Fichiers de déploiement",
+		"de": "Bereitstellungsdateien",
+		"it": "File di distribuzione",
+		"pt": "Arquivos de implantação",
+		"es": "Archivos de implementación"
+	},
+	{
+		"en": "Provisioning",
+		"zh-cn": "供应",
+		"fr": "Provisioning",
+		"de": "Bereitstellung",
+		"it": "Approvvigionamento",
+		"pt": "Provisioning",
+		"es": "Aprovisionamiento"
+	},
+	{
+		"en": "General Settings",
+		"zh-cn": "常规设置",
+		"fr": "réglages généraux",
+		"de": "Allgemeine Einstellungen",
+		"it": "impostazioni generali",
+		"pt": "Configurações Gerais",
+		"es": "Configuración general"
+	},
+	{
+		"en": "Chinese",
+		"zh-cn": "中文"
+	}
+]

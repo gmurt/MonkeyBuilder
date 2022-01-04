@@ -1,0 +1,44 @@
+"C:\projects\iCrew\App\XmlUpdater\Win32\Debug\XmlUpdater.exe"
+
+MKDIR ".\Android64\Release\%PROJECTNAME%\bin"
+MKDIR ".\Android64\Release\%PROJECTNAME%\debug"
+MKDIR ".\Android64\Release\%PROJECTNAME%\assets"
+
+%ICONS%
+
+
+%SPLASH%
+
+%CUSTOMFILES%
+
+%PACLIENT% -u8 --put="ssl\android\32bit\libcrypto.so,.\Android64\Release\%PROJECTNAME%\assets\internal\libssl32\,0,libcrypto.so"
+%PACLIENT% -u8 --put="ssl\android\32bit\libssl.so,.\Android64\Release\%PROJECTNAME%\assets\internal\libssl32\,0,libssl.so"
+
+%PACLIENT% -u8 --put="ssl\android\64bit\libcrypto.so,.\Android64\Release\%PROJECTNAME%\assets\internal\libssl64\,0,libcrypto.so"
+%PACLIENT% -u8 --put="ssl\android\64bit\libssl.so,.\Android64\Release\%PROJECTNAME%\assets\internal\libssl64\,0,libssl.so"
+
+%PACLIENT% -u8 --put="Android64\Release\classes.dex,.\Android64\Release\%PROJECTNAME%\classes\,1,classes.dex"
+%PACLIENT% -u8 --put="Android64\Release\strings.xml,.\Android64\Release\%PROJECTNAME%\res\values\,1,strings.xml"
+%PACLIENT% -u8 --put="Android64\Release\provider_paths.xml,.\Android64\Release\%PROJECTNAME%\res\xml\,1,provider_paths.xml"
+%PACLIENT% -u8 --put="Android64\Release\styles-v21.xml,.\Android64\Release\%PROJECTNAME%\res\values-v21\,1,styles.xml"
+%PACLIENT% -u8 --put="Android64\Release\styles.xml,.\Android64\Release\%PROJECTNAME%\res\values\,1,styles.xml"
+%PACLIENT% -u8 --put="Android64\Release\colors.xml,.\Android64\Release\%PROJECTNAME%\res\values\,1,colors.xml"
+%PACLIENT% -u8 --put="Android64\Release\AndroidManifest.xml,.\Android64\Release\%PROJECTNAME%\,1,AndroidManifest.xml"
+%PACLIENT% -u8 --put="Android64\Release\splash_image_def.xml,.\Android64\Release\%PROJECTNAME%\res\drawable\,1,splash_image_def.xml"
+%PACLIENT% -u8 --put="Android\Release\lib%PROJECTNAME%.so,.\Android64\Release\%PROJECTNAME%\library\lib\armeabi-v7a\,1,lib%PROJECTNAME%.so"
+
+
+
+%PACLIENT% -u8 --put="Android\Release\lib%PROJECTNAME%.so,.\Android64\Release\%PROJECTNAME%\library\lib\armeabi-v7a\,1,lib%PROJECTNAME%.so"
+%PACLIENT% -u8 --put="Android64\Release\lib%PROJECTNAME%.so,.\Android64\Release\%PROJECTNAME%\library\lib\arm64-v8a\,1,lib%PROJECTNAME%.so"
+COPY  ".\Android64\Release\lib%PROJECTNAME%.so" ".\Android64\Release\%PROJECTNAME%\debug\lib%PROJECTNAME%.so"
+
+%PACLIENT% -u8 --stripdebug="C:\Users\Public\Documents\Embarcadero\Studio\21.0\CatalogRepository\AndroidNDK-21-21.0.38860.1461\android-ndk-r21\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\aarch64-linux-android\bin\strip.exe,.\Android64\Release\%PROJECTNAME%\debug\lib%PROJECTNAME%.so,.\Android64\Release\%PROJECTNAME%\library\lib\arm64-v8a\lib%PROJECTNAME%.so"
+%PACLIENT% -u8 --stripdebug="C:\Users\Public\Documents\Embarcadero\Studio\21.0\CatalogRepository\AndroidNDK-21-21.0.38860.1461\android-ndk-r21\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\aarch64-linux-android\bin\strip.exe,.\Android64\Release\%PROJECTNAME%\library\lib\arm64-v8a\..\armeabi-v7a\lib%PROJECTNAME%.so"
+%PACLIENT% -u8 --appbundle="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\bin\java.exe,c:\program files (x86)\embarcadero\studio\21.0\bin\android\aapt2.exe,c:\program files (x86)\embarcadero\studio\21.0\bin\android\bundletool-all-0.13.3.jar,.\Android64\Release\%PROJECTNAME%\library,.\Android64\Release\%PROJECTNAME%\classes,.\Android64\Release\%PROJECTNAME%\res,.\Android64\Release\%PROJECTNAME%\assets,.\Android64\Release\%PROJECTNAME%\AndroidManifest.xml,C:\Users\Public\Documents\Embarcadero\Studio\21.0\CatalogRepository\AndroidSDK-2525-21.0.38860.1461\platforms\android-29\android.jar,.\Android64\Release\%PROJECTNAME%\bin\%PROJECTNAME%-unsigned.aab"
+
+%PACLIENT% -u8 --jarsign="%JDKJarsignerPath%,.\Android64\Release\%PROJECTNAME%\bin\%PROJECTNAME%-unsigned.aab,kernowsoftwareltd,C:\Projects\certificates.keystore,SHA256withRSA,SHA-256,853C47D95FC207D3CF76E53EA4467BF1819E0544A01C97EF97BC0FF08E723CD8DB42A384E34B1C30C1EA5730FA9DC338BAE2360A044B22FC162B45DFE5E522CFC948F34CD576FAD0BFE4AF4607021D58,853C47D95FC207D3CF76E53EA4467BF1819E0544A01C97EF97BC0FF08E723CD8DB42A384E34B1C30C1EA5730FA9DC338BAE2360A044B22FC162B45DFE5E522CFC948F34CD576FAD0BFE4AF4607021D58,1"
+
+COPY ".\Android64\Release\%PROJECTNAME%\bin\%PROJECTNAME%-unsigned.aab" ".\Android64\Release\%PROJECTNAME%\bin\%PROJECTNAME%.aab"
+
+DEL ".\Android64\Release\%PROJECTNAME%\bin\%PROJECTNAME%-unsigned.aab"

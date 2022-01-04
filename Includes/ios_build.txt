@@ -1,0 +1,19 @@
+"$(BDSBIN)\%COMPILER%" 
+-$D0 -$L- -$Y- --no-config 
+-B 
+-Q 
+-AGenerics.Collections=System.Generics.Collections;Generics.Defaults=System.Generics.Defaults 
+-D%CONDITIONAL_DEFINES%
+-E.\MonkeyBuilder\%PLATFORM%\Release\%PROJECTNAME%
+-I%LIBRARYPATH% 
+-LE$(BDSCOMMONDIR)\Bpl\iOSDevice64
+-LN$(BDSCOMMONDIR)\Dcp\iOSDevice64
+-NU.\MonkeyBuilder\%PLATFORM%\Release\%PROJECTNAME%
+-NS%UNITSCOPENAMES% 
+-O%SEARCHPATH%
+-R%SEARCHPATH%
+-U%SEARCHPATH%
+--syslibroot:$(BDSPLATFORMSDKSDIR)\%IOS_SDK%
+--frameworkpath:%IOS_FRAMEWORKPATH%
+--linker-option:"%LINKEROPTIONS%-arch %ARM_PLATFORM%" 
+-NO.\MonkeyBuilder\%PLATFORM%\Release\%PROJECTNAME%  %PROJECTNAME%.dpr

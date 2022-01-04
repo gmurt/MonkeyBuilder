@@ -1,0 +1,1 @@
+These files are compiled into the application via the Images/Resources option in the Project menu.

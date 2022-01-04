@@ -1,0 +1,19 @@
+"$(BDSBIN)\%COMPILER%" 
+-$D0 -$L- -$Y- --no-config 
+-B 
+-Q 
+-TX.so 
+-AGenerics.Collections=System.Generics.Collections;Generics.Defaults=System.Generics.Defaults 
+-D%CONDITIONAL_DEFINES%  
+-E.\%PLATFORM%\Release\
+-I%LIBRARYPATH% 
+-LE$(BDSCOMMONDIR)\Bpl\%PLATFORM%
+-LN$(BDSCOMMONDIR)\Dcp\%PLATFORM%
+-NU.\%PLATFORM%\Release\
+-NS%UNITSCOPENAMES% 
+-O%SEARCHPATH%
+-R%SEARCHPATH%
+-U%SEARCHPATH%
+--libpath:%ANDROIDLIBPATH% 
+--linker:%ANDROIDLINKER% 
+-NO.\%PLATFORM%\Release\ %PROJECTNAME%.dpr

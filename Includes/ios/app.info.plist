@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>%APPNAME%</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>%DISPLAYNAME%</string>
+	<key>CFBundleIdentifier</key>
+	<string>%APPID%</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>7.1</string>
+	<key>CFBundleVersion</key>
+	<string>%MAJOR%.%MINOR%.%BUILD%</string>
+	<key>CFBundleShortVersionString</key>
+	<string>%MAJOR%.%MINOR%</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleExecutable</key>
+	<string>%EXECUTABLE%</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		%DEVICEFAMILY%
+	</array>
+
+        <key>UIUserInterfaceStyle</key>
+        <string>Light</string>
+
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>%NSLocationAlwaysUsageDescription%</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>%NSLocationWhenInUseUsageDescription%</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>%NSLocationAlwaysAndWhenInUseUsageDescription%</string>
+	<key>UIBackgroundModes</key>
+	<array>
+	</array>
+	<key>NSContactsUsageDescription</key>
+	<string>%NSContactsUsageDescription%</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>%NSPhotoLibraryUsageDescription%</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>%NSPhotoLibraryAddUsageDescription%</string>
+	<key>NSCameraUsageDescription</key>
+	<string>%NSCameraUsageDescription%</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>%NSFaceIDUsageDescription%</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>%NSMicrophoneUsageDescription%</string>
+	<key>NSSiriUsageDescription</key>
+	<string>%NSSiriUsageDescription%</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>%NSBluetoothAlwaysUsageDescription%</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>%NSBluetoothPeripheralUsageDescription%</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>%NSCalendarsUsageDescription%</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>%NSRemindersUsageDescription%</string>
+	<key>NSMotionUsageDescription</key>
+	<string>%NSMotionUsageDescription%</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>%NSSpeechRecognitionUsageDescription%</string>
+
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+
+
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneOS</string>
+	</array>
+
+
+	<key>MinimumOSVersion</key>
+	<string>%MinimumOSVersion%</string>
+	<key>DTPlatformName</key>
+	<string>iphoneos</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>DTPlatformVersion</key>
+	<string>14.3</string>
+	<key>DTPlatformBuild</key>
+	<string>18C61</string>
+	<key>DTXcodeBuild</key>
+	<string>12C33</string>
+	<key>DTSDKBuild</key>
+	<string>18C61</string>
+
+        <key>GADApplicationIdentifier</key>
+                <string>%ADMOBAPPID%</string>
+        <key>GADIsAdManagerApp</key>
+        <true/>
+</dict>
+</plist>

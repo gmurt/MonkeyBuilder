@@ -1,0 +1,1 @@
+PATH %path% & "%DX_BAT%" --dex --output="%releaseDir%\classes.dex" %jar_files%

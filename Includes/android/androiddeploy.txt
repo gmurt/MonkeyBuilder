@@ -1,0 +1,86 @@
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --Clean=".\Android64\Release\Project1,C:\Projects\MonkeyBuilder\Test\Blank App\Project1._@emb_.tmp"  
+
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\lib\android\release\mips\libnative-activity.so,.\Android64\Release\Project1\library\lib\mips\,1,libProject1.so" 
+
+c:\program files (x86)\embarcadero\studio\21.0\bin\CodeGear.Deployment.targets(586,5): warning : Local file "c:\program files (x86)\embarcadero\studio\21.0\lib\android\release\armeabi-v7a\libnative-activity.so" not found. Skipping deployment.
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_LauncherIcon_72x72.png,.\Android64\Release\Project1\res\drawable-hdpi\,1,ic_launcher.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_NotificationIcon_72x72.png,.\Android64\Release\Project1\res\drawable-xxhdpi\,1,ic_notification.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_SplashImage_960x720.png,.\Android64\Release\Project1\res\drawable-xlarge\,1,splash_image.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\libProject1.so,.\Android64\Release\Project1\library\lib\arm64-v8a\,1,libProject1.so" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_NotificationIcon_36x36.png,.\Android64\Release\Project1\res\drawable-hdpi\,1,ic_notification.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_NotificationIcon_48x48.png,.\Android64\Release\Project1\res\drawable-xhdpi\,1,ic_notification.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\styles.xml,.\Android64\Release\Project1\res\values\,1,styles.xml" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_NotificationIcon_24x24.png,.\Android64\Release\Project1\res\drawable-mdpi\,1,ic_notification.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\strings.xml,.\Android64\Release\Project1\res\values\,1,strings.xml" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_LauncherIcon_96x96.png,.\Android64\Release\Project1\res\drawable-xhdpi\,1,ic_launcher.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\colors.xml,.\Android64\Release\Project1\res\values\,1,colors.xml" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_LauncherIcon_144x144.png,.\Android64\Release\Project1\res\drawable-xxhdpi\,1,ic_launcher.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_SplashImage_640x480.png,.\Android64\Release\Project1\res\drawable-large\,1,splash_image.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\classes.dex,.\Android64\Release\Project1\classes\,1,classes.dex" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\AndroidManifest.xml,.\Android64\Release\Project1\,1,AndroidManifest.xml" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\styles-v21.xml,.\Android64\Release\Project1\res\values-v21\,1,styles.xml" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\lib\android\release\armeabi\libnative-activity.so,.\Android64\Release\Project1\library\lib\armeabi\,1,libProject1.so" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_LauncherIcon_48x48.png,.\Android64\Release\Project1\res\drawable-mdpi\,1,ic_launcher.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_NotificationIcon_96x96.png,.\Android64\Release\Project1\res\drawable-xxxhdpi\,1,ic_notification.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="Android64\Release\splash_image_def.xml,.\Android64\Release\Project1\res\drawable\,1,splash_image_def.xml" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_SplashImage_470x320.png,.\Android64\Release\Project1\res\drawable-normal\,1,splash_image.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_LauncherIcon_36x36.png,.\Android64\Release\Project1\res\drawable-ldpi\,1,ic_launcher.png" 
+
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --put="c:\program files (x86)\embarcadero\studio\21.0\bin\Artwork\Android\FM_SplashImage_426x320.png,.\Android64\Release\Project1\res\drawable-small\,1,splash_image.png" 
+
+COPY_1
+[REM]Copying file from "C:\Projects\MonkeyBuilder\Test\Blank App\Android64\Release\libProject1.so" to ".\Android64\Release\Project1\debug\libProject1.so".
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --stripdebug="C:\Users\Public\Documents\Embarcadero\Studio\21.0\CatalogRepository\AndroidNDK-21-21.0.38860.1461\android-ndk-r21\toolchains\aarch64-linux-android-4.9\prebuilt\windows-x86_64\aarch64-linux-android\bin\strip.exe,.\Android64\Release\Project1\debug\libProject1.so,.\Android64\Release\Project1\library\lib\arm64-v8a\libProject1.so"  
+
+"c:\program files (x86)\embarcadero\studio\21.0\bin\paclient.exe" -u8 --aaptpackage="C:\Users\Public\Documents\Embarcadero\Studio\21.0\CatalogRepository\AndroidSDK-2525-21.0.38860.1461\build-tools\29.0.3\Aapt.exe,.\Android64\Release\Project1\library,.\Android64\Release\Project1\classes,.\Android64\Release\Project1\res,.\Android64\Release\Project1\assets,.\Android64\Release\Project1\AndroidManifest.xml,C:\Users\Public\Documents\Embarcadero\Studio\21.0\CatalogRepository\AndroidSDK-2525-21.0.38860.1461\platforms\android-29\android.jar,.\Android64\Release\Project1\bin\Project1-unsigned.apk"  
+
+
+[REM] Copying file from ".\Android64\Release\Project1\bin\Project1-unsigned.apk" to ".\Android64\Release\Project1\bin\Project1.apk".

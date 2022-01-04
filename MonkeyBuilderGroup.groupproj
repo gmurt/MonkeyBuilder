@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4DDB5923-CD81-4A86-BF26-093FB7D96E34}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MonkeyBuilder.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MonkeyExpert\MBExpert.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MonkeyBuilderServer\MonkeyBuilderServer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MonkeyBuilder">
+        <MSBuild Projects="MonkeyBuilder.dproj"/>
+    </Target>
+    <Target Name="MonkeyBuilder:Clean">
+        <MSBuild Projects="MonkeyBuilder.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyBuilder:Make">
+        <MSBuild Projects="MonkeyBuilder.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MBExpert">
+        <MSBuild Projects="MonkeyExpert\MBExpert.dproj"/>
+    </Target>
+    <Target Name="MBExpert:Clean">
+        <MSBuild Projects="MonkeyExpert\MBExpert.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MBExpert:Make">
+        <MSBuild Projects="MonkeyExpert\MBExpert.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MonkeyBuilderServer">
+        <MSBuild Projects="MonkeyBuilderServer\MonkeyBuilderServer.dproj"/>
+    </Target>
+    <Target Name="MonkeyBuilderServer:Clean">
+        <MSBuild Projects="MonkeyBuilderServer\MonkeyBuilderServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyBuilderServer:Make">
+        <MSBuild Projects="MonkeyBuilderServer\MonkeyBuilderServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MonkeyBuilder;MBExpert;MonkeyBuilderServer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MonkeyBuilder:Clean;MBExpert:Clean;MonkeyBuilderServer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MonkeyBuilder:Make;MBExpert:Make;MonkeyBuilderServer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
