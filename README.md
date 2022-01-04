@@ -1,7 +1,7 @@
 # MonkeyBuilder
 MonkeyBuilder is a build automation tool for iOS & Android Firemonkey projects. 
 
-![Screenshot](/docs/images/screenshot.png)
+![Screenshot](https://github.com/gmurt/MonkeyBuilder/blob/main/Docs/images/screenshot.png?raw=true)
 
 ### Requirements
 
