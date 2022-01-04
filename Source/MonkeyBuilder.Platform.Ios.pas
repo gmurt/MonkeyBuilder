@@ -284,11 +284,11 @@ begin
     begin
       LogText('Uploading to iTunesConnect...');
 
-   {   CreateMoscoUtils.UploadToiTunes(Project.IosSettings.ConnectionProfile,
+      CreateMoscoUtils.UploadToiTunes(Project.IosSettings.ConnectionProfile,
                                       BuildFolder+pn+'.ipa',
                                       GlobalSetting('itunesconnect', 'user'),
                                       GlobalSetting('itunesconnect', 'password'),
-                                      AError);     }
+                                      AError);
       if AError <> '' then
         LogText(AError)
       else
