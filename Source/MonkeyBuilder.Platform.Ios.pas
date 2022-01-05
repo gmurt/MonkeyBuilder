@@ -61,6 +61,7 @@ type
 
   TMbProjectPlatformIos = class(TMbProjectPlatform, IMbProjectPlatformIos)
   private
+    FFrameworkPath: string;
     FDeviceFamily: string;
     FGoogleServicePlist: TksFile;
     FMinOsVersion: string;
@@ -101,6 +102,8 @@ type
     procedure SetProvisionCert(AType: TmbDeploymentType; const Value: string);
     function GetProvisionProfileID(AType: TmbDeploymentType): string;
     procedure SetProvisionProfileID(AType: TmbDeploymentType; const Value: string);
+    function GetFrameworkPath: string;
+    procedure SetFrameworkPath(const Value: string);
 
 
 
@@ -120,6 +123,7 @@ type
   public
     constructor Create(AProject: IMbProject); override;
   published
+    property FrameworkPath: string read GetFrameworkPath write SetFrameworkPath;
     property DeviceFamily: string read GetDeviceFamily write SetDeviceFamily;
     property GoogleServicePlist: TksFile read GetGoogleServicePList write SetGoogleServicePList;
     property MinOsVersion: string read GetMinOsVersion write SetMinOsVersion;
@@ -137,6 +141,7 @@ var
   ADeployType: TmbDeploymentType;
 begin
   inherited;
+  FFrameworkPath := (ASource as IMbProjectPlatformIos).FrameworkPath;
   FDeviceFamily := (ASource as IMbProjectPlatformIos).DeviceFamily;
   FGoogleServicePlist := (ASource as IMbProjectPlatformIos).GoogleServicePlist;
   FMinOsVersion := (ASource as IMbProjectPlatformIos).MinOsVersion;
@@ -566,7 +571,7 @@ begin
   AScript := AScript + '-R'+ALibPath+ASearchPath+' ';
   AScript := AScript + '-U'+ALibPath+ASearchPath+' ';
   AScript := AScript + '--syslibroot:'+ASdkPath+' ';
-  AScript := AScript + '--frameworkpath:'+ASdkPath+'\System\Library\Frameworks;'+ASdkPath+'\System\Library\PrivateFrameworks ';
+  AScript := AScript + '--frameworkpath:'+ASdkPath+'\System\Library\Frameworks;'+ASdkPath+'\System\Library\PrivateFrameworks;'+FFrameworkPath+ ' ';
   AScript := AScript + '--linker-option:"'+LinkerOptions+' -arch arm64" ';
   AScript := AScript + '-NO"'+ReleaseFolder+'" "'+ChangeFileExt(Project.Filename, '.dpr')+'" ';
   AScript := ReplaceEnvironmentVars(mbIosDevice64, AScript);
@@ -677,6 +682,11 @@ begin
   Result := FDeviceFamily;
 end;
 
+function TMbProjectPlatformIos.GetFrameworkPath: string;
+begin
+  Result := FFrameworkPath;
+end;
+
 function TMbProjectPlatformIos.GetGoogleServicePList: TksFile;
 begin
   Result := FGoogleServicePlist;
@@ -712,6 +722,7 @@ end;
 procedure TMbProjectPlatformIos.LoadFromJson(AJson: TJsonObject);
 begin
   inherited;
+  FFrameworkPath := AJson.S['frameworkpath'];
   FDeviceFamily := AJson.S['deviceFamily'];
   FGoogleServicePlist := AJson.S['googleServicePList'];
   FMinOsVersion := AJson.S['minOsVersion'];
@@ -729,7 +740,10 @@ end;
 procedure TMbProjectPlatformIos.SaveToJson(AJson: TJsonObject);
 begin
   inherited;
+  AJson.S['frameworkpath'] := FFrameworkPath;
+
   AJson.S['deviceFamily'] := FDeviceFamily;
+
   AJson.S['googleServicePList'] := FGoogleServicePlist;
   AJson.S['minOsVersion'] := FMinOsVersion;
 
@@ -745,6 +759,11 @@ end;
 procedure TMbProjectPlatformIos.SetDeviceFamily(const Value: string);
 begin
   FDeviceFamily := Value;
+end;
+
+procedure TMbProjectPlatformIos.SetFrameworkPath(const Value: string);
+begin
+  FFrameworkPath := Value;
 end;
 
 procedure TMbProjectPlatformIos.SetGoogleServicePList(const Value: TksFile);

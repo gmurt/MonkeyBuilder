@@ -346,6 +346,7 @@ type
 
   IMbProjectPlatformIos = interface(IMbProjectPlatform)
     ['{EAECF765-9101-4952-85CB-55F25042E453}']
+    function GetFrameworkPath: string;
     function SupportsIPhone: Boolean;
     function SupportsIPad: Boolean;
     function GetUsageDescriptions: IMbProjectUsageDescriptions;
@@ -357,11 +358,12 @@ type
     procedure SetProvisionCert(AType: TmbDeploymentType; const Value: string);
     function GetProvisionProfileID(AType: TmbDeploymentType): string;
     procedure SetProvisionProfileID(AType: TmbDeploymentType; const Value: string);
-
+    procedure SetFrameworkPath(const Value: string);
 
     function GetGoogleServicePlist: TksFile;
     procedure SetGoogleServicePlist(const AValue: TksFile);
     procedure SetMinOsVersion(const Value: string);
+    property FrameworkPath: string read GetFrameworkPath write SetFrameworkPath;
     property DeviceFamily: string read GetDeviceFamily write SetDeviceFamily;
     property GoogleServicePlist: TksFile read GetGoogleServicePlist write SetGoogleServicePlist;
     property MinOsVersion: string read GetMinOsVersion write SetMinOsVersion;

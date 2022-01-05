@@ -800,6 +800,7 @@ begin
   if AProperty.ToLower = 'conditionals' then AType := ksString;
   if AProperty.ToLower = 'userinterfacestyle' then AType := ksComboItem;
   if AProperty.ToLower = 'librarypath' then AType := ksFileList;
+  if AProperty.ToLower = 'frameworkpath' then AType := ksFileList;
   if AProperty.ToLower = 'searchpath' then AType := ksFileList;
   if AProperty.ToLower = 'devicefamily' then AType := ksComboItem;
   if AProperty.ToLower = 'googleserviceplist' then AType := ksFile;

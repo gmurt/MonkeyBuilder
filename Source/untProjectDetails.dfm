@@ -251,7 +251,7 @@ inherited frmProjectDetails: TfrmProjectDetails
           Top = 8
           Width = 501
           Height = 429
-          ActivePage = TabSheet1
+          ActivePage = tabProjectSettings
           Align = alClient
           TabHeight = 30
           TabOrder = 0
@@ -314,7 +314,7 @@ inherited frmProjectDetails: TfrmProjectDetails
                 Left = 50
                 Top = 0
                 Width = 96
-                Height = 18
+                Height = 41
                 Align = alLeft
                 Caption = 'Project Settings'
                 Font.Charset = DEFAULT_CHARSET
@@ -324,6 +324,7 @@ inherited frmProjectDetails: TfrmProjectDetails
                 Font.Style = [fsBold]
                 ParentFont = False
                 Layout = tlCenter
+                ExplicitHeight = 18
               end
               object Image1: TImage
                 Left = 0
@@ -1041,7 +1042,7 @@ inherited frmProjectDetails: TfrmProjectDetails
                 Left = 50
                 Top = 0
                 Width = 140
-                Height = 18
+                Height = 41
                 Align = alLeft
                 Caption = 'Launch Screen Settings'
                 Font.Charset = DEFAULT_CHARSET
@@ -1051,6 +1052,7 @@ inherited frmProjectDetails: TfrmProjectDetails
                 Font.Style = [fsBold]
                 ParentFont = False
                 Layout = tlCenter
+                ExplicitHeight = 18
               end
               object Image3: TImage
                 Left = 0
@@ -1421,7 +1423,7 @@ inherited frmProjectDetails: TfrmProjectDetails
                 Left = 50
                 Top = 0
                 Width = 214
-                Height = 18
+                Height = 41
                 Align = alLeft
                 Caption = 'Provisioning Profiles && Certificates'
                 Font.Charset = DEFAULT_CHARSET
@@ -1431,6 +1433,7 @@ inherited frmProjectDetails: TfrmProjectDetails
                 Font.Style = [fsBold]
                 ParentFont = False
                 Layout = tlCenter
+                ExplicitHeight = 18
               end
               object Image4: TImage
                 Left = 0
@@ -3075,11 +3078,13 @@ inherited frmProjectDetails: TfrmProjectDetails
               object Label26: TLabel
                 Left = 39
                 Top = 6
-                Width = 267
-                Height = 13
+                Width = 305
+                Height = 32
                 Align = alClient
                 Caption = 'Unable to connect to Mosco. Please check your settings'
                 Layout = tlCenter
+                ExplicitWidth = 267
+                ExplicitHeight = 13
               end
               object Button5: TButton
                 Left = 344
