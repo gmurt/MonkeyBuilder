@@ -109,10 +109,9 @@ begin
   ATmpStore := TPath.GetTempFileName;
   try
     FileCopy(AStore, ATmpStore, True);
-
     AKeyTool := GetSdkValueFromRegistry(mbAndroid64, 'JDKKeyToolPath');
     Execute('"'+AKeyTool+'" -keyclone -alias "'+AKey+'" -dest "'+AKey+'_temp" -keypass '+AKeyPass+' -new '+AKeyPass+' -keystore "'+ATmpStore+'" -storepass '+AStorePass, OnKeyToolOutput, True, nil, TJclProcessPriority.ppNormal);
-    Result := Trim(FCmdOutput[0]) = '';
+    Result := Pos('keytool error:', FCmdOutput.Text.ToLower) = 0;
   finally
     if FileExists(ATmpStore) then
       DeleteFile(ATmpStore);

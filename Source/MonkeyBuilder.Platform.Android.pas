@@ -450,6 +450,7 @@ var
   pn: string;
   AStripExe: string;
   AAptExe: string;
+  AApt2Exe: string;
   AAndroidPath: string;
   AJarSigner: string;
   AJdkPath: string;
@@ -465,6 +466,7 @@ begin
 
   AStripExe := GetSdkValueFromRegistry(APlatform, 'NDKArmLinuxAndroidStripFile');
   AAptExe := GetSdkValueFromRegistry(APlatform, 'SDKAaptPath');
+  AApt2Exe := StringReplace(GetSdkValueFromRegistry(APlatform, 'SDKAaptPath'), 'aapt.exe', 'aapt2.exe', [rfIgnoreCase]);
   AAndroidPath := GetSdkValueFromRegistry(APlatform, 'SDKApiLevelPath');
   AJarSigner := GetSdkValueFromRegistry(APlatform, 'JDKJarsignerPath');
   AJdkPath := GetSdkValueFromRegistry(APlatform, 'JDKPath');
@@ -523,17 +525,26 @@ begin
   AScript.Add(APaClient+' -u8 --aaptpackage="'+AAptExe+','+ARelDir+'\'+pn+'\library,'+ARelDir+'\'+pn+'\classes,'+ARelDir+'\'+pn+'\res,'+ARelDir+'\'+pn+'\assets,'+ARelDir+'\'+pn+'\AndroidManifest.xml,'+AAndroidPath+'\android.jar,'+ARelDir+'\'+pn+'\bin\'+pn+'-unsigned.apk" ');
   AScript.Add('[REM]Codesigning app (*.apk)');
   AScript.Add('[CMD]SIGN_APK');
+  AScript.Add('[REM]zipalign app (*.apk)');
+
   AScript.Add(APaClient+' -u8 --zipalign="'+AZipAlign+','+ARelDir+'\'+pn+'\bin\'+pn+'-unsigned.apk,'+ARelDir+'\'+pn+'\bin\'+pn+'.apk,4" ');
 
 
   if ADeployType = mbDeployAppStore then
   begin
     AScript.Add('[REM]Generating  app bundle (*.aab)');
-    AScript.Add(APaClient+' -u8 --appbundle="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\bin\java.exe,'+
-                          'c:\program files (x86)\embarcadero\studio\21.0\bin\android\aapt2.exe,'+
-                          'c:\program files (x86)\embarcadero\studio\21.0\bin\android\bundletool-all-1.2.0.jar,'+ARelDir+'\'+pn+'\library,'+ARelDir+'\'+pn+'\classes,'+
-                          ARelDir+'\'+pn+'\res,'+ARelDir+'\'+pn+'\assets,'+ARelDir+'\'+pn+'\AndroidManifest.xml,'+ AAndroidJar+','+ARelDir+'\'+pn+'\bin\'+pn+'-unsigned.aab" ');
 
+    AScript.Add(APaClient+' -u8 --appbundle="'+
+                AJdkPath+'\bin\java.exe,'+
+                AApt2Exe+','+
+                '$(BDSBIN)\android\bundletool-all-1.2.0.jar,'+
+                ARelDir+'\'+pn+'\library,'+
+                ARelDir+'\'+pn+'\classes,'+
+                ARelDir+'\'+pn+'\res,'+
+                ARelDir+'\'+pn+'\assets,'+
+                ARelDir+'\'+pn+'\AndroidManifest.xml,'+
+                AAndroidPath+'\android.jar,'+
+                ARelDir+'\'+pn+'\bin\'+pn+'-unsigned.aab"');
 
     AScript.Add('[REM]Codesigning app bundle (*.aab)');
     AScript.Add('[CMD]SIGN_AAB');
